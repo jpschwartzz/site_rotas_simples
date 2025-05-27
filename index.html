@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multigrafo - Rotas de Ônibus</title>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Multigrafo - Rotas de Ônibus</h1>
+
+  <div class="cidade-section">
+    <h2>Adicionar Cidade</h2>
+    <input type="text" id="cidadeInput" placeholder="Nome da cidade">
+    <button onclick="adicionarCidade()">Adicionar Cidade</button>
+  </div>
+
+  <div class="cidade-section">
+    <h2>Adicionar Rota</h2>
+    <input type="text" id="origem" placeholder="Origem">
+    <input type="text" id="destino" placeholder="Destino">
+    <input type="text" id="companhia" placeholder="Companhia">
+    <input type="text" id="horario" placeholder="Horário (ex: 08:00)">
+    <input type="number" id="preco" placeholder="Preço">
+    <button onclick="adicionarRota()">Adicionar Rota</button>
+  </div>
+
+  <div class="rotas-section">
+    <h2>Rotas Cadastradas</h2>
+    <button onclick="mostrarRotas()">Exibir Rotas</button>
+    <pre id="output"></pre>
+  </div>
+</body>
+
+</html>
